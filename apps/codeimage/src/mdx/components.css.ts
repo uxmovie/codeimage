@@ -18,12 +18,12 @@ export const h4 = style({
 
 export const h3 = style({
   fontSize: '1.5rem',
-  fontWeight: themeTokens.fontWeight.semibold,
+  fontWeight: themeTokens.fontWeight.normal,
 });
 
 export const h2 = style({
   fontSize: '1.875rem',
-  fontWeight: themeTokens.fontWeight.semibold,
+  fontWeight: themeTokens.fontWeight.normal,
   marginTop: themeTokens.spacing['3'],
   marginBottom: themeTokens.spacing['3'],
 });
@@ -31,7 +31,7 @@ export const h2 = style({
 export const h1 = style({
   fontSize: '2.25rem',
   color: themeVars.foreground,
-  fontWeight: themeTokens.fontWeight.bold,
+  fontWeight: themeTokens.fontWeight.normal,
   marginBottom: themeTokens.spacing['6'],
 });
 

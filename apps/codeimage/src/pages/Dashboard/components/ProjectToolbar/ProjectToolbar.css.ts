@@ -3,7 +3,7 @@ import {style} from '@vanilla-extract/css';
 
 export const title = style([
   textStyles.fontSize['2xl'],
-  textStyles.fontWeight.medium,
+  textStyles.fontWeight.normal,
 ]);
 
 export const container = style({

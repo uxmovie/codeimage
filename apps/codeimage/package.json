@@ -97,7 +97,6 @@
     "clsx": "^2.1.1",
     "downloadjs": "^1.4.7",
     "idb-keyval": "^6.2.2",
-    "inter-ui": "^4.1.1",
     "modern-normalize": "^3.0.1",
     "motion": "^10.15.5",
     "polished": "^4.2.2",

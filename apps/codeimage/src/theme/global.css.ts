@@ -2,14 +2,14 @@ import {themeVars} from '@codeimage/ui';
 import {globalFontFace, globalStyle} from '@vanilla-extract/css';
 
 globalStyle('body', {
-  fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
-  '@supports': {
-    '(font-variation-settings: normal)': {
-      // Inter var
-      fontFamily: 'Inter var, system-ui, -apple-system, sans-serif',
-      fontFeatureSettings: '"cv02","cv03","cv04","cv11"',
-    },
-  },
+  fontFamily: 'Geist, system-ui, -apple-system, sans-serif',
+});
+
+// Faculty Glyphic ships a single 400 weight: headings must not request
+// heavier weights or the browser synthesizes a faux-bold display face.
+globalStyle('h1, h2, h3', {
+  fontFamily: 'Faculty Glyphic, Geist, system-ui, -apple-system, sans-serif',
+  fontWeight: 400,
 });
 
 const cssVar = /(--)[^,:)]+/;
@@ -45,6 +45,20 @@ globalStyle('::-webkit-scrollbar-thumb', {
 
 globalStyle('::-webkit-scrollbar-thumb:hover', {
   backgroundColor: themeVars.dynamicColors.scrollBar.hoverBackgroundColor,
+});
+
+globalFontFace('Geist', {
+  fontDisplay: 'swap',
+  fontWeight: '100 900',
+  fontStyle: 'normal',
+  src: "url(/assets/fonts/geist/Geist[wght].woff2) format('woff2')",
+});
+
+globalFontFace('Faculty Glyphic', {
+  fontDisplay: 'swap',
+  fontWeight: 400,
+  fontStyle: 'normal',
+  src: "url(/assets/fonts/faculty-glyphic/FacultyGlyphic-Regular.ttf) format('truetype')",
 });
 
 globalFontFace('Geist Mono', {

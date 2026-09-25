@@ -14,13 +14,12 @@ export const wrapper = style([
 ]);
 
 export const notFoundTitle = style({
-  fontFamily: 'Jetbrains Mono',
+  fontFamily: 'Faculty Glyphic, Geist, system-ui, sans-serif',
   fontSize: '12rem',
   color: themeVars.dynamicColors.descriptionTextColor,
 });
 
 export const descriptionTitle = style({
-  fontFamily: 'Jetbrains Mono',
   fontSize: themeVars.fontSize.lg,
   color: themeVars.dynamicColors.descriptionTextColor,
 });
